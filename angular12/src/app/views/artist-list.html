@@ -1,0 +1,6 @@
+<div class="head-page" *ngIf="identity">
+    <h1>{{titulo}}</h1>
+    <a    [routerLink]="['/crear-artista']" *ngIf="identity.role =='ROLE_USER'"class="btn btn-default">
+        Añadir Artista
+    </a>
+</div>
